@@ -45,5 +45,3 @@ It demonstrates both **log analysis** for identifying attacks and **active respo
 - Threat Hunting and Incident Response
 
 ---
-
-## 📌 Project Structure
