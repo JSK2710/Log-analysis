@@ -1,4 +1,4 @@
-#Brute Force Attack Detection and Response with Wazuh
+# Brute Force Attack Detection and Response with Wazuh
 
 This repository showcases a multi-platform SOC simulation lab built using **Wazuh**, where brute-force attacks on both **Linux (SSH)** and **Windows (RDP)** are detected, visualized, and automatically blocked using **Active Response**.
 
