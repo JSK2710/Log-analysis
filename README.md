@@ -1,47 +1,54 @@
-# Brute Force Attack Detection and Response using Wazuh
+#Brute Force Attack Detection and Response with Wazuh
 
-This repository showcases a two-part project focused on detecting and responding to brute-force SSH login attempts using **Wazuh**.  
-It demonstrates both **log analysis** for identifying attacks and **active response** for automatically blocking malicious IPs.
-
----
-
-## 📚 Project Parts
-
-### 1. Brute Force Log Analysis using Wazuh
-- Configured Wazuh agent to monitor `/var/log/auth.log` for failed SSH login attempts.
-- Set up an SSH server on the client machine.
-- Simulated brute-force attacks using **Hydra** from a Kali Linux attacker machine.
-- Detected suspicious activity using Wazuh and visualized alerts in the Threat Hunting dashboard.
-
-🔗 [View Documentation](1.Brute%20force%20log%20analysis.pdf)
+This repository showcases a multi-platform SOC simulation lab built using **Wazuh**, where brute-force attacks on both **Linux (SSH)** and **Windows (RDP)** are detected, visualized, and automatically blocked using **Active Response**.
 
 ---
 
-### 2. Response to Brute Force Attack with Wazuh Active Response
-- Configured **Wazuh Active Response** to trigger a **firewall-drop** when a brute-force attack is detected (Rule ID: 5710).
-- Automatically blocked attacker IPs for **10 minutes** after multiple failed SSH login attempts.
-- Simulated the attack again and successfully verified that active response blocked further SSH login attempts.
-- Alerts and response events were visualized in the Wazuh Dashboard.
+## 🔐 Project Highlights
 
-🔗 [View Documentation](2.Response%20to%20brute%20force.pdf)
+### 🔹 SSH Brute Force Detection & Response (Linux)
+- Detected SSH brute-force attempts by monitoring `/var/log/auth.log` on Ubuntu client.
+- Simulated attacks using **Hydra** and visualized them in the **Wazuh Dashboard**.
+- Configured **Wazuh Active Response** (Rule ID: 5710) to block attacker IPs for 10 minutes.
 
----
-
-## 🛠️ Tools and Technologies
-- **Wazuh** (SIEM and Active Response)
-- **Ubuntu Linux** (Wazuh Server and Client)
-- **Kali Linux** (Attacker Machine)
-- **Hydra** (Brute-force attack tool)
-- **OpenSSH** (SSH Server)
+📄 [View SSH Brute Force Report](Brute%20force%20log%20analysis.pdf)  
+📄 [View Active Response Report](Response%20to%20brute%20force.pdf)
 
 ---
 
-## 🚀 Skills Developed
-- Log Monitoring and Threat Detection
-- Security Automation using Active Response
-- Brute Force Attack Simulation
-- SIEM Tools Integration
-- Linux System Administration
-- Threat Hunting and Incident Response
+### 🔹 RDP Brute Force Detection & Response (Windows)
+- Enabled Remote Desktop on a **Windows 11 Enterprise** client with Wazuh agent.
+- Simulated **Hydra**-based RDP brute-force attacks from Kali Linux.
+- Detected using Rule IDs `60122`, `60204` and blocked using **Active Response**.
+
+📄 [View RDP Brute Force Report](Detection%20%26%20Response%20to%20RDP%20brute-force%20attack.pdf)
 
 ---
+
+## 🛠️ Technologies Used
+- **Wazuh** (SIEM + Active Response)
+- **Ubuntu Linux** (Wazuh Server + Client)
+- **Windows 11** (RDP Target with Agent)
+- **Kali Linux** (Attack Simulation)
+- **Hydra**, **OpenSSH**
+
+---
+
+## 🌐 Related Lab Setup Tutorials
+- [Install Wazuh on Ubuntu Server](https://thecyberreactor.in/how-to-install-wazuh-on-ubuntu/)
+- [Install Wazuh Agent on Ubuntu Client](https://thecyberreactor.in/how-to-install-the-wazuh-agent-on-an-ubuntu-client/)
+- [Configure File Integrity Monitoring with Wazuh](https://thecyberreactor.in/how-to-configure-file-integrity-monitoring-with-wazuh/)
+
+---
+
+## 🎯 Skills Demonstrated
+- Threat Detection (Linux + Windows)
+- Active Defense and SIEM Configuration
+- Log Monitoring and Rule-Based Response
+- SOC Simulation and Multi-platform Hardening
+
+> 🚨 This lab was built in a safe, controlled environment for educational and professional development purposes.
+
+---
+
+#️⃣ **#CyberSecurity #Wazuh #SIEM #SOC #BruteForce #LinuxSecurity #WindowsSecurity #ActiveResponse #Infosec #HandsOnSecurity**
