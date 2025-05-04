@@ -11,8 +11,8 @@ This repository showcases a multi-platform SOC simulation lab built using **Wazu
 - Simulated attacks using **Hydra** and visualized them in the **Wazuh Dashboard**.
 - Configured **Wazuh Active Response** (Rule ID: 5710) to block attacker IPs for 10 minutes.
 
-📄 [View SSH Brute Force Report](Brute%20force%20log%20analysis.pdf)  
-📄 [View Active Response Report](Response%20to%20brute%20force.pdf)
+📄 [View SSH Brute Force Report](1.Brute%20force%20log%20analysis.pdf)  
+📄 [View Active Response Report](2.Response%20to%20brute%20force.pdf)
 
 ---
 
@@ -21,7 +21,7 @@ This repository showcases a multi-platform SOC simulation lab built using **Wazu
 - Simulated **Hydra**-based RDP brute-force attacks from Kali Linux.
 - Detected using Rule IDs `60122`, `60204` and blocked using **Active Response**.
 
-📄 [View RDP Brute Force Report](Detection%20%26%20Response%20to%20RDP%20brute-force%20attack.pdf)
+📄 [View RDP Brute Force Report](3.Detection%20%26%20Response%20to%20RDP%20brute-force%20attack.pdf)
 
 ---
 
